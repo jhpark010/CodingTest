@@ -6,12 +6,12 @@ import java.util.Queue;
 public class Problem_42583 {
 	public static void main(String[] args) {
 		// Test Case
-//		int bridge_length = 2;
-//		int weight = 10;
-//		int[] truck_weights = {7, 4, 5, 6};
-		int bridge_length = 100;
-		int weight = 100;
-		int[] truck_weights = {10,10,10,10,10,10,10,10,10,10};
+		int bridge_length = 2;
+		int weight = 10;
+		int[] truck_weights = {7, 4, 5, 6};
+//		int bridge_length = 100;
+//		int weight = 100;
+//		int[] truck_weights = {10,10,10,10,10,10,10,10,10,10};
 		
 		// Answer
 		Problem_42583 p = new Problem_42583();
@@ -58,9 +58,6 @@ public class Problem_42583 {
         		timeQueue.offer(timeQueue.poll() + 1);
         	}
         }
-        
-        System.out.println(time);
-        
         
 		return answer; 
 	}
