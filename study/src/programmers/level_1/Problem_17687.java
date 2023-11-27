@@ -1,18 +1,12 @@
 package programmers.level_1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class Problem_17687 {
 	public static void main(String[] args) {
 		// Test Case
 		int n = 16;
-		int t = 4;
-		int m = 2;
-		int p = 1;
+		int t = 16; //미리 구할 숫자의 갯수
+		int m = 2; //인원
+		int p = 1; //순서
 		
 		// Answer
 		Problem_17687 main = new Problem_17687();
@@ -22,31 +16,17 @@ public class Problem_17687 {
 
 	public String solution(int n, int t, int m, int p) {
 		StringBuilder sb = new StringBuilder();
+		StringBuilder answer = new StringBuilder();
 		
-		for (int i = 0; i <= 16; i++) {
-			if (i >= 10 && i <= 15) {
-				System.out.println((char) (i + 55));
-			} else {
-				//i가 10이상부터(10 ~ 15 제외)는 한자리씩 나눠서
-				System.out.println(getBinary(n, i));
-			}
+		for (int i = 0; sb.length() < t * m; i ++) {
+			sb.append(Integer.toString(i, n));
 		}
 		
-		return "";
-	}
-	
-	public String getBinary(int n, int num) {
-		StringBuilder sb = new StringBuilder();
-		if (num == 0) {
-			sb.append(0);
-		} else {
-			while (num > 0) {
-				sb.append(num % n);
-				num = num / n;
-			}
+		for (int i = p - 1; answer.length() < t; i += m) {
+			answer.append(sb.charAt(i));
 		}
 		
-		return sb.reverse().toString();
+		return answer.toString().toUpperCase();
 	}
 }
 
