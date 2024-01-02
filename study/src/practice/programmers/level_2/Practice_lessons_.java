@@ -1,7 +1,5 @@
 package practice.programmers.level_2;
 
-import java.util.Arrays;
-
 public class Practice_lessons_ {
 	public static void main(String[] args) {
 		// Test Case

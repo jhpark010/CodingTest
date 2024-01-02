@@ -1,41 +1,31 @@
 package programmers.level_2;
 
-import java.util.Arrays;
-
 public class Problem_12985 {
 	public static void main(String[] args) {
 		// Test Case
-		int[] people = {50, 40, 40, 50, 40};
-		int limit = 120;
+		int n = 16;
+		int a = 1;
+		int b = 2;
 		
 		// Answer
 		Problem_12985 p = new Problem_12985();
-//		System.out.println(p.solution(brown, yellow));
-		System.out.println(p.solution(people, limit));
+		System.out.println(p.solution(n, a, b));
 
 	}
 
-	public int solution(int[] people, int limit) {
+	public int solution(int n, int a, int b) {
 		int answer = 0;
-		Arrays.sort(people);
-		
-		int lt = 0;
-		int rt = people.length - 1;
-		
-		while (lt <= rt) {
-			if (people[lt] + people[rt] > limit) {
-				rt --;
-				answer ++;
-				
-			} else {
-				lt ++;
-				rt --;
-				answer ++;
-			}
-		}
-		
-		
-		return answer;
+        while(true) {
+            a = a / 2 + a % 2;
+            b = b / 2 + b % 2;
+            answer ++;
+
+            if (a == b) {
+                break;
+            }
+        }
+
+        return answer;
 	}
 	
 }
