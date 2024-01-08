@@ -5,12 +5,14 @@ public class Practice_lessons_ {
 		// Test Case
 		
 		// Answer
-		Practice_lessons_ p = new Practice_lessons_();
-		System.out.println(p.solution());
+		Practice_lessons_ main = new Practice_lessons_();
+		System.out.println(main.solution());
 		
 	}
 	
 	public int solution() {
+		
+		
 		return 0;
 	}
 	
