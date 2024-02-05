@@ -10,12 +10,27 @@ public class Practice_lessons_77885 {
 		
 		// Answer
 		Practice_lessons_77885 main = new Practice_lessons_77885();
-		System.out.println(main.solution(numbers));
+//		System.out.println(main.solution(numbers));
+		System.out.println(main.solution2(numbers));
 		
 	}
 	
+	public long[] solution2(long[] numbers) {
+		long[] answer = new long[numbers.length];
+		
+		for (int i = 0; i < numbers.length; i++) {
+			answer[i] = numbers[i];
+			
+			
+			
+		}
+		
+		return answer;
+	}
+	
+	
 	public long[] solution(long[] numbers) {
-        long[] answer = new long[2];
+        long[] answer = new long[numbers.length];
         
         for (int i = 0; i < numbers.length; i++) {
         	if (numbers[i] % 2 == 0) {

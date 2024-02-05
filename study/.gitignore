@@ -65,4 +65,6 @@ local.properties
 .sts4-cache/
 study/src/test/*
 
-./src/practice/*
+
+/src/test/*
+/src/pnp/*

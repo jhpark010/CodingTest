@@ -6,7 +6,7 @@ public class Problem_12899 {
 	
 	public static void main(String[] args) {
 		// Test Case
-		int n = 101;
+		int n = 20;
 		
 		// Answer
 		Problem_12899 main = new Problem_12899();
